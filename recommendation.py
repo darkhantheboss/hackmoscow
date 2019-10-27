@@ -3,8 +3,8 @@ from bs4 import BeautifulSoup
 from sklearn.neighbors.dist_metrics import DistanceMetric
 
 SPOTIFY_API_URL = 'https://api.spotify.com/v1'
-SPOTIFY_TOKEN = 'Bearer BQA_AITdC2wIE2yEaEp7NJTn4jKr2akegB8WA3l3ebfWtVmnoe_nUqWUz5Q0C580xzn_9xSQodJQSDztxkHvUCshNv' \
-                '4-O2i3bNN_AJ2aGRIcy3YQz2eYbva7sszn0UK3i6F3262__nb07WZr-km02xHU3Djeu-ggrDhraw'
+SPOTIFY_TOKEN = 'Bearer BQDLFlxzTwN22HlDKYGYYf5hbDnzv5R3D9PVNZQKHVKgN-PEXHR8wj2WLn-XgRTznWba-eX1fepxNqFqMYpcAZNi' \
+                'Y1tCnO3kmEEMz6MdVsfG4KMLK6X2GnG35qd0e08uCCDDD4q8REN8hfK3__qLn6r97tS9jgngpQmrBQ'
 
 
 def parse_tracks_from_source(source, link):

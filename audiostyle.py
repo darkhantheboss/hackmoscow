@@ -1,9 +1,6 @@
 import tensorflow as tf
 import librosa
-import os
 import numpy as np
-import matplotlib.pyplot as plt
-from sys import stderr
 import argparse
 
 parser = argparse.ArgumentParser(description='Style transfer')
@@ -14,12 +11,12 @@ args = parser.parse_args()
 N_FFT = 2048
 N_FILTERS = 4096
 
+
 def read_audio_spectrum(filename):
     x, fs = librosa.load(filename)
     print("sampling rate :", fs)
     S = librosa.stft(x, N_FFT)
-    p = np.angle(S)
-
+    np.angle(S)
     S = np.log1p(np.abs(S[:, :430]))
     return S, fs
 
