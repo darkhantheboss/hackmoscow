@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}AudioResolution{% endblock %}
+{% block content %}
+<div class="container">
+    <h1 class="arial">Increase the quality of music using deep convolutional neural networks</h1>
+    <hr>
+    <div>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Downsampling block</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>ConvNet</td>
+                <td>Relu</td>
+            </tr>
+            </tbody>
+        </table>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Unsampling block</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>ConvNet</td>
+                <td>Dropout</td>
+                <td>ReLu</td>
+                <td>DimShuffle</td>
+                <td>Stacking</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="text-center">
+        <h4>Unsample audio</h4>
+        <hr>
+        <img src="{% static 'img/graph.png' %}" alt="" height="300px">
+        <h4>Cubic interpolation & Output</h4>
+        <hr>
+        <img src="{% static 'img/spectrogram.png' %}" alt="" height="300px">
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}Jenres{% endblock %}
+{% block content %}
+<div class="container">
+    <h1 class="arial">Audio Genre change</h1>
+    <hr>
+    <h4>Original</h4>
+    <audio controls preload="auto">
+        <source src="{% static 'out/original.mp3' %}" type="audio/mpeg">
+    </audio>
+</div>
+    <table class="table2">
+        <thead>
+            <tr>
+                <th><a class="linklarge" href="{%static 'out/rock.mp3' %}" download>Rock</a></th>
+                <th><a class="linklarge" href="{%static 'out/hiphop.mp3' %}" download>Hiphop</a></th>
+                <th><a class="linklarge" href="{%static 'out/serene.mp3' %}" download>Serene</a></th>
+            </tr>
+            <tr>
+                <th><a class="linklarge" href="{%static 'out/horror.mp3' %}" download>Horror</a></th>
+                <th><a class="linklarge" href="{%static 'out/acoustic.mp3' %}" download>Acoustic</a></th>
+                <th><a class="linklarge" href="{%static 'out/happy.mp3' %}" download>Happy</a></th>
+            </tr>
+            <tr>
+                <th><a class="linklarge" href="{%static 'out/style.mp3' %}" download>Style</a></th>
+            </tr>
+        </thead>
+    </table>
+{% endblock %}

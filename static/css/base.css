@@ -1,0 +1,88 @@
+a {
+    color: white !important;
+}
+
+.white {
+    color: red !important;
+}
+
+.arial {
+    font-size: 24px;
+}
+
+.linklarge {
+    font-size: 24px;
+    text-decoration: overline;
+    text-decoration-color: red;
+}
+
+.form-control {
+    width: 70%;
+}
+
+.logo {
+    width: 90%;
+    margin-top: -15px;
+    margin-left: -17px;
+}
+
+.table {
+    width: 77%;
+    margin-top: 40px;
+    margin-left: 122px;
+    border: 1px solid black;
+}
+
+.table2 {
+    width: 77%;
+    margin-top: 40px;
+    margin-left: 122px;
+    border: 1px solid black;
+}
+
+.table2{
+    background-color: rgba(29,29,29,0.96);
+}
+
+.container {
+    border: 1px solid silver;
+    margin-top: 75px;
+    padding: 20px;
+}
+
+audio {
+    width: 50%;
+}
+
+a:hover {
+    color: white !important;
+    transition: color 0s !important;
+}
+
+.black {
+    color: red;
+}
+
+.black:hover {
+    color: black;
+}
+
+.navbar1 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 290px;
+}
+
+.navbar-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #e30611;
+    color: white;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
