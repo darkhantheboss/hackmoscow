@@ -15,7 +15,7 @@ django-extensions==2.2.5
 enum34==1.1.6
 funcsigs==1.0.2
 h5py==2.10.0
-html5lib==0.9999999
+html5lib==0.99999999
 idna==2.8
 ipython==5.8.0
 ipython-genutils==0.2.0
